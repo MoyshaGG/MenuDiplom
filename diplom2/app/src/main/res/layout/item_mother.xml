@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/viewUp"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toTopOf="@+id/imageMotherRecycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMotherRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewUp"
+        tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameMotherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="@string/nameCPU"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMotherRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameMother"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/nameMotherView"
+        app:layout_constraintTop_toTopOf="@+id/nameMotherView"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        tools:text="i5-10400F" />
+
+    <TextView
+        android:id="@+id/motherPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/nameMotherView"
+        app:layout_constraintTop_toBottomOf="@+id/nameMother"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="Ціна:"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/motherPrice"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nameMother"
+        app:layout_constraintTop_toTopOf="@+id/motherPriceView"
+        tools:text="1550" />
+
+    <TextView
+        android:id="@+id/MotherSocketView"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/socketProcessor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherPriceView"
+        app:layout_constraintTop_toBottomOf="@+id/motherPrice" />
+
+    <TextView
+        android:id="@+id/MotherSocket"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/motherPrice"
+        app:layout_constraintTop_toTopOf="@+id/MotherSocketView"
+        tools:text="s1151" />
+
+    <TextView
+        android:id="@+id/MotherThreadsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherSocketView"
+        app:layout_constraintTop_toBottomOf="@+id/MotherSocket"
+        android:text="Потоків:"
+        />
+
+    <TextView
+        android:id="@+id/MotherThreads"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherSocket"
+        app:layout_constraintTop_toTopOf="@+id/MotherThreadsView"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/MotherCoresView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ядер:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherThreadsView"
+        app:layout_constraintTop_toBottomOf="@+id/MotherThreads" />
+
+    <TextView
+        android:id="@+id/MotherCores"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherThreads"
+        app:layout_constraintTop_toTopOf="@+id/MotherCoresView"
+        tools:text="6" />
+
+    <TextView
+        android:id="@+id/MotherMemoryTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Тип пам'яті:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherCoresView"
+        app:layout_constraintTop_toBottomOf="@+id/MotherCores" />
+
+    <TextView
+        android:id="@+id/MotherMemoryType"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherCores"
+        app:layout_constraintTop_toTopOf="@+id/MotherMemoryTypeView"
+        tools:text="DDR4" />
+
+    <TextView
+        android:id="@+id/MotherTDPView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TDP:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherCoresView"
+        app:layout_constraintTop_toBottomOf="@+id/MotherMemoryType" />
+
+    <TextView
+        android:id="@+id/MotherTDP"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherCores"
+        app:layout_constraintTop_toTopOf="@+id/MotherTDPView"
+        tools:text="60" />
+
+    <TextView
+        android:id="@+id/motherGenerationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Покоління:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherCoresView"
+        app:layout_constraintTop_toBottomOf="@+id/MotherTDP" />
+
+    <TextView
+        android:id="@+id/motherGeneration"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/MotherMemoryType"
+        app:layout_constraintTop_toTopOf="@+id/motherGenerationView"
+        tools:text="10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

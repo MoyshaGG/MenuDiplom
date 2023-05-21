@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <View
+        android:id="@+id/viewUp"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#B5B5B5"
+        app:layout_constraintBottom_toTopOf="@+id/imageRamRecycle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageRamRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewUp"
+        tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameRamView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="@string/name_ram"
+        app:layout_constraintBottom_toBottomOf="@+id/imageRamRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameRam"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/nameRamView"
+        app:layout_constraintTop_toTopOf="@+id/nameRamView"
+        tools:text="ram name" />
+
+    <TextView
+        android:id="@+id/ramPriceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/nameRamView"
+        app:layout_constraintTop_toBottomOf="@+id/nameRam"
+        android:textStyle = "bold"
+        android:textSize = "18sp"
+        android:text="Ціна:"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ramPrice"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/nameRam"
+        app:layout_constraintTop_toTopOf="@+id/ramPriceView"
+        tools:text="1550" />
+
+    <TextView
+        android:id="@+id/RamFrequencyView"
+        android:layout_width="158dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/ram_frequency"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ramPriceView"
+        app:layout_constraintTop_toBottomOf="@+id/ramPrice" />
+
+    <TextView
+        android:id="@+id/ramFrequency"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ramPrice"
+        app:layout_constraintTop_toTopOf="@+id/RamFrequencyView"
+        tools:text="2400hz" />
+
+    <TextView
+        android:id="@+id/StorageBrandView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/RamFrequencyView"
+        app:layout_constraintTop_toBottomOf="@+id/ramFrequency"
+        android:text="@string/ram_timing"
+        />
+
+    <TextView
+        android:id="@+id/ramTiming"
+        android:layout_width="180sp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ramFrequency"
+        app:layout_constraintTop_toTopOf="@+id/StorageBrandView"
+        tools:text="12" />
+
+    <TextView
+        android:id="@+id/ramTypeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/ram_type"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/StorageBrandView"
+        app:layout_constraintTop_toBottomOf="@+id/ramTiming" />
+
+    <TextView
+        android:id="@+id/ramType"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/ramTiming"
+        app:layout_constraintTop_toTopOf="@+id/ramTypeView"
+        tools:text="6" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
